@@ -1,0 +1,13 @@
+.lunbotu{
+    width: 100%;
+    height: 25%;
+}
+
+.gallery-top{
+    width: 100%;
+    height: 100%;
+}
+.gallery-top>div>div>img{
+    width: 100%;
+    height: 100%;
+}

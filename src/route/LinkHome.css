@@ -1,0 +1,19 @@
+.linkhome{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 15%;
+    border-bottom: 3vh solid rgb(241, 232, 232);
+}
+.linkhome a{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;   
+}
+.linkhome a img{
+    width: 70%;
+    height: 70%;
+}
