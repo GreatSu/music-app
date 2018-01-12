@@ -31,9 +31,9 @@ class MusicList extends Component {
   render() {
     let rdnummin = Math.floor(Math.random() * 30);
     let rdnummax = rdnummin + 6;
-    const xuanran = this.state.json.channels.slice(rdnummin,rdnummax).map((item,i)=>{
-        return <div key={i}>{item.name}</div>
-    })
+    // const xuanran = this.state.json.channels.slice(rdnummin,rdnummax).map((item,i)=>{
+    //     return <div key={i}>{item.name}</div>
+    // })
 
     return (
       <div id="musiclist">

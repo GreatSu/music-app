@@ -12,8 +12,6 @@ class MusicLists extends Component{
             console.log(data.channels)
         }.bind(this))
 
-       
-
     }
 
     render(){
