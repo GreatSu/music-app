@@ -1,0 +1,19 @@
+#footplay{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#footplay>img{
+    width: 10%;
+    height: 60%;
+    margin:0 15% 0 15%;
+}
+.hua{
+    width: 14%;
+    height: 80%;
+    background:linear-gradient(to right bottom,red,rgb(180, 54, 117),rgb(158, 136, 202),greenyellow);
+    border-radius: 50%;
+}

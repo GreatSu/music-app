@@ -1,0 +1,64 @@
+#musicplay{
+    width: 100%;
+    height: 100%;
+    background: gainsboro;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+.playhead{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playhead>img{
+    width: 10%;
+    height: 60%;
+    margin:0 5% 0 5%;
+}
+.playhead>a{
+    width: 10%;
+    height: 60%;
+    margin:0 5% 0 5%;
+}
+.headimg{
+    width: 100%;
+    height: 100%;
+}
+.playhead>span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3rem;
+}
+.playmid{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.playmid>img{
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    animation: rot 10s linear infinite;
+    
+}
+@keyframes rot{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+.controls{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type=range]{
+    background-color:black;
+    border-color:black;
+}

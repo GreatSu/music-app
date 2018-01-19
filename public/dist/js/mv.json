@@ -1,0 +1,41 @@
+{
+  "channels": [
+    {
+      "id": "1",
+      "title": "平凡之路",
+      "img":
+        "http://img1.c.yinyuetai.com/video/mv/150103/2213432/-M-0d929056f9f0dff43094ebd4e80cd60d_240x135.jpg?t=20150103152828",
+      "singer": "朴树",
+      "mv":
+        "http://220.170.49.106/5/j/l/j/d/jljdphaqyhpsdsoqnuhgzjobxqkqyl/he.yinyuetai.com/E35F014AA5A7D30776C558B684F50826.flv?sc\u003d9947775278a95323\u0026br\u003d3134\u0026vid\u003d2212336\u0026aid\u003d269\u0026area\u003dML\u0026vst\u003d0"
+    },
+    {
+      "id": "2",
+      "title": "上海三月",
+      "img":
+        "http://img4.yytcdn.com/video/mv/170619/2891657/-M-5559c57e4edaca37b9fba44fa60cf2c6_240x135.jpg",
+      "singer": "戴荃",
+      "mv":
+        "http://220.170.49.115/12/l/o/k/j/lokjmtyparxrmbafynbwxnnisahoyi/he.yinyuetai.com/446C015CBE81484881AD288A6AB0D02D.mp4?sc\u003da502821eba7af18f\u0026br\u003d3180\u0026vid\u003d2891657\u0026aid\u003d42605\u0026area\u003dML\u0026vst\u003d0"
+    },
+    {
+      "id": "3",
+      "title": "美好的旧时光",
+      "img":
+        "http://img3.yytcdn.com/video/mv/131202/824395/6C7E0142B2DF25A522EFE8DBBC5C3C77_240x135.jpeg?t=20131202183355",
+      "singer": "邓紫棋",
+      "mv":
+        "http://220.170.49.103/11/q/n/o/d/qnodbdtlnobhxolallyelsabqukcgf/he.yinyuetai.com/48450142B2F7E82025D16500B87506B8.flv?sc\u003d7144ebbdd396cdaf\u0026br\u003d3131\u0026vid\u003d824395\u0026aid\u003d273\u0026area\u003dHT\u0026vst\u003d2"
+    },
+    {
+      "id": "4",
+      "title": "多远都要在一起",
+      "img":
+        "http://img3.yytcdn.com/video/mv/150218/2242769/-M-3e4e1ee9989c132a616abd007ca18668_240x135.jpg?t=20150218222621",
+      "singer": "邓紫棋",
+      "mv":
+        "http://220.170.49.115/5/c/o/k/x/cokxxvfngajsjaxeffhivffcwduwat/he.yinyuetai.com/4D1B015AF1CE2D65E4A30F6AE3A903D6.mp4?sc\u003db972399a690f03f0\u0026br\u003d3123\u0026vid\u003d2242769\u0026aid\u003d273\u0026area\u003dHT\u0026vst\u003d0"
+    }
+    
+  ]
+}

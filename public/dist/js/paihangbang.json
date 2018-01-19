@@ -1,0 +1,116 @@
+{
+    "channels": [
+      {
+        "name": "巅峰榜·流行指数",
+        "cover_middle": "https://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_212846372.jpg?max_age=2592000",
+        "info":[{
+            "title":"沧海一声笑(Live)",
+            "singer":"GAI"
+        },
+        {
+            "title":"梦里花(Live)",
+            "singer":"张韶涵"
+        },
+        {
+            "title":"Domino(Live)",
+            "singer":"Jessie J"
+        }]
+      },
+      {
+        "name": "巅峰榜·热歌",
+        "cover_middle": "https://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_26_300_212606735.jpg?max_age=2592000",
+        "info":[{
+            "title":"体面",
+            "singer":"于文文"
+        },
+        {
+            "title":"说散就散",
+            "singer":"袁娅维"
+        },
+        {
+            "title":"说散就散",
+            "singer":"JC"
+        }]
+      },
+      {
+        "name": "巅峰榜·新歌",
+        "cover_middle": "https://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_27_300_212846661.jpg?max_age=2592000",
+        "info":[{
+            "title":"都市经企业",
+            "singer":"GAI/双笙"
+        },
+        {
+            "title":"无问西东",
+            "singer":"王菲"
+        },
+        {
+            "title":"皮囊",
+            "singer":"萧敬腾"
+        }]
+      },
+      {
+        "name": "巅峰榜·歌手2018",
+        "cover_middle": "https://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_33_300_212846372.jpg?max_age=2592000",
+        "info":[{
+            "title":"沧海一声笑(Live)",
+            "singer":"GAI"
+        },
+        {
+            "title":"后来(Live)",
+            "singer":"李晓东"
+        },
+        {
+            "title":"Domino(Live)",
+            "singer":"Jessie J"
+        }]
+      },
+      {
+        "name": "巅峰榜·梦想的声音",
+        "cover_middle": "https://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_30_300_212846879.jpg?max_age=2592000",
+        "info":[{
+            "title":"我们的爱(Live)",
+            "singer":"林俊杰"
+        },
+        {
+            "title":"这么近那么远(Live)",
+            "singer":"王小小"
+        },
+        {
+            "title":"天真有邪(Live)",
+            "singer":"张靓颖"
+        }]
+    },
+      {
+        "name": "巅峰榜·港台",
+        "cover_middle": "https://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_6_300_212736534.jpg?max_age=2592000",
+        "info":[{
+            "title":"异想天开",
+            "singer":"谢霆锋"
+        },
+        {
+            "title":"星夜的呼唤",
+            "singer":"谭咏麟"
+        },
+        {
+            "title":"什么什么",
+            "singer":"蔡依林"
+        }]
+    },
+      {
+        "name": "巅峰榜·内地",
+        "cover_middle": "https://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_5_300_212606735.jpg?max_age=2592000",
+        "info":[{
+            "title":"体面",
+            "singer":"于文文"
+        },
+        {
+            "title":"说散就散",
+            "singer":"袁娅维"
+        },
+        {
+            "title":"无问西东",
+            "singer":"王菲"
+        }]
+      }
+    ]
+  }

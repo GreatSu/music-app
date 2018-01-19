@@ -1,0 +1,15 @@
+.isvideo{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1111111;
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    overflow: hidden;
+}
+.mvplay{
+    width: 100%;
+    height: 100%;
+    
+}

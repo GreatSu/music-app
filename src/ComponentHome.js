@@ -1,13 +1,12 @@
 import React,{Component} from 'react'
 import './ComponentHome.css'
 
-import {BrowserRouter as Router} from 'react-router-dom'
+
 import LinkHome from './route/LinkHome';
 import Index from './component/Index'
 import Lunbo from './component/Lunbo'
-import Music from './component/Music'
 import MusicList from './component/MusicList'
-
+import Footplay from './component/Footplay'
 
 
 
@@ -17,14 +16,15 @@ class ComponentHome extends Component{
 
     render(){
         return(
-            <Router>
+            
             <div id="componenthome">
-                {/* <Index /> */}
+                <Index />
                 <Lunbo />
                 <LinkHome/>
                 <MusicList />
+                <Footplay/>
             </div>
-            </Router >
+           
 
         )
     }
