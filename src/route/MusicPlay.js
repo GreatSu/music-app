@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import './MusicPlay.css'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import MusicColor from '../component/Musiccolor'
 
 
 // 图片路径
@@ -66,16 +67,12 @@ class MusicPlay extends Component{
             musicnow:""
         }
         this.handlepause = this.handlepause.bind(this)
+        this.colorshow = this.colorshow.bind(this)
     }
 
     componentWillMount() {
     
-        // window.$.getJSON('http://api.jirengu.com/fm/getSong.php',{ "channel": "public_tuijian_spring" },(data)=>{
-        //     this.setState({
-        //         song:data.song
-        //     })
-        //     console.log(this.state.song)
-        // })
+        
 
         axios.get('http://api.jirengu.com/fm/getSong.php',{"channel":"public_tuijian_spring"}).then(res =>{
             const data = res.data.song
@@ -132,7 +129,7 @@ class MusicPlay extends Component{
             })
         },0)
 
-    },1000)
+    },1500)
     
   }
 
@@ -172,6 +169,23 @@ class MusicPlay extends Component{
   }
 
 
+  colorshow(e){
+    
+    let musiccolor = document.querySelector('.colorcontainer')
+    if(musiccolor.style.height >0+'px'){
+        musiccolor.style.height = "0"
+        
+    }else{
+        musiccolor.style.height = "15%"
+    }
+  }
+
+   clickcolor(e){
+    let musicplay = document.querySelector("#musicplay")
+    musicplay.style.background = e.target.style.background
+   }
+
+
     render(){
         
         const title = this.state.song?this.state.song.map((item, i) => {
@@ -208,7 +222,7 @@ class MusicPlay extends Component{
         return(
             <div id="musicplay">
                 <div className="playhead">
-                    <Link to="/"><img className="headimg" src={zuoURL} alt="" /></Link>{title}<img className="headimg" src={allURL} alt="" />
+                    <Link to="/"><img  className="headimg" src={zuoURL} alt="" /></Link>{title}<img className="headimg" onClick={this.colorshow} src={allURL} alt="" />
                 </div>
                 <div className="playmid">
                     {user}
@@ -223,6 +237,7 @@ class MusicPlay extends Component{
                     <img onClick={this.handleprev} src={zbURL} alt=""/><img onClick={this.handlepause} src={pause} alt="" /><img onClick={this.handlenext}  src={ybURL} alt="" />
                     </div>
                 </div>
+                <MusicColor clickbg={this.clickcolor}/>
             </div>
         )
     }

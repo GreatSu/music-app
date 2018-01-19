@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ComponentHome from './ComponentHome'
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import {BrowserRouter as Router,Route,Redirect} from 'react-router-dom'
 import MusicPlay from './route/MusicPlay'
 import Paihangbang from './component/Paihangbang'
 import Home from './component/Home'
@@ -17,6 +17,7 @@ class App extends Component {
         <Route path="/something"  component={Paihangbang} />
         <Route path="/home" component={Home}/>
         <Route path="/home/:id" component={Video} />
+        {/* <Redirect exact to="/"/> */}
       </div>
       </Router >
     );

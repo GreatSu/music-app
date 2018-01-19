@@ -1,0 +1,16 @@
+.colorcontainer{
+    width: 80%;
+    height: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    box-sizing: border-box;
+    transition: height 2s;
+}
+.colorcontainer>div{
+    width: 20%;
+    height: 90%;
+}
