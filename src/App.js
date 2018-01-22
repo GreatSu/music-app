@@ -6,6 +6,7 @@ import MusicPlay from './route/MusicPlay'
 import Paihangbang from './component/Paihangbang'
 import Home from './component/Home'
 import Video from './route/Video'
+import Login from './component/Login'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Route path="/something"  component={Paihangbang} />
         <Route path="/home" component={Home}/>
         <Route path="/home/:id" component={Video} />
+        <Route path="/login" component={Login}/>
         {/* <Redirect exact to="/"/> */}
       </div>
       </Router >

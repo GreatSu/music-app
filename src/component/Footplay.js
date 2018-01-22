@@ -10,11 +10,17 @@ import all from "../img/all.png"
 class Footplay extends Component{
     render(){
         return(
-            <Link to="/music/public_tuijian_suibiantingting">
+            
             <div id="footplay">
-                <img src={kefu} alt="" /><div className="hua"></div><img src={all} alt="" />
-            </div>
-            </Link>
+                <Link to="/music/id"><img src={kefu} alt="" />
+                <div className="hua"></div>
+                </Link>
+             <Link to="/login">
+             <img  src={all} alt="" />
+             </Link>
+             </div>
+           
+            
         )
     }
 }

@@ -14,7 +14,7 @@
 .moviea{
   display: inline-block;
   width: 80%;
-  height: 23vh;
+  height: 22.7vh;
   margin: 13px 0 0px 0;
 }
 .movie{
@@ -25,16 +25,23 @@
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
 }
 .movie>img{
   width: 80%;
   height: 80%;
 }
 .back{
+  width: 32px;
+  height: 32px;
   position: fixed;
-  right: 20px;
+  right: 5px;
   bottom: 25px;
   display: inline-block;
-  width: 48px;
-  height: 48px;
+ 
+}
+.back>img{
+  width: 32px;
+  height: 32px;
 }

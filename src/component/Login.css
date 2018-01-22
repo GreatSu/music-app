@@ -1,0 +1,70 @@
+#login{
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: antiquewhite;
+}
+#login>div:nth-child(1){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#login>div>span{
+   
+    margin-right:10vw; 
+}
+#login>div>a{
+    color: antiquewhite;
+    margin-left:10vw; 
+}
+.loginpage{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loginpage>img{
+    border-radius: 50%;
+    width: 35%;
+    height: 35%；
+}
+.loginpage>form{
+    width:100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.registpage{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.registpage>img{
+    border-radius: 50%;
+    width: 35%;
+    height: 35%；
+}
+.registpage>form{
+    width:100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Video.css";
 import axios from "axios";
+import back from "../img/退出.png"
 
 class Video extends Component {
   constructor(props) {
@@ -25,7 +26,10 @@ class Video extends Component {
       <video className="mvplay"  controls autoPlay  src={this.state.json[this.props.match.params.id-1].mv} />
     ) : null;
 
-    return <div  className="isvideo">{videos}</div>;
+    return <div  className="isvideo">
+      {videos}
+      <img onClick={this.props.history.goBack}  src={back} alt=""/>
+    </div>;
   }
 }
 

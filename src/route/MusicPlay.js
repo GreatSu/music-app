@@ -64,10 +64,14 @@ class MusicPlay extends Component{
         this.state = {
             song:'',
             musiclong:"",
-            musicnow:""
+            musicnow:"",
         }
         this.handlepause = this.handlepause.bind(this)
         this.colorshow = this.colorshow.bind(this)
+        this.oninput = this.oninput.bind(this)
+        this.handleprev =this.handleprev.bind(this)
+        this.handlenext = this.handlenext.bind(this)
+        this.format = this.format.bind(this)
     }
 
     componentWillMount() {
@@ -129,7 +133,7 @@ class MusicPlay extends Component{
             })
         },0)
 
-    },1500)
+    },2000)
     
   }
 
@@ -149,6 +153,13 @@ class MusicPlay extends Component{
     musictitle.innerHTML = piclist.channels[num].title
     musicart.innerHTML = piclist.channels[num].art
     stopimg.src = piclist.channels[num].pic
+
+    setTimeout(()=>{
+        this.setState({
+            musiclong:musicplayer.duration
+        })
+    },500)
+    
   }
 
   handlenext(){
@@ -166,6 +177,14 @@ class MusicPlay extends Component{
     musictitle.innerHTML = piclist.channels[num].title
     musicart.innerHTML = piclist.channels[num].art
     stopimg.src = piclist.channels[num].pic
+    
+    setTimeout(()=>{
+        this.setState({
+            musiclong:musicplayer.duration
+        })
+    },500)
+   
+
   }
 
 
@@ -185,6 +204,13 @@ class MusicPlay extends Component{
     musicplay.style.background = e.target.style.background
    }
 
+
+   oninput(){
+       let range = document.querySelector('input').value
+    //    console.log(range)
+       let audio = document.querySelector('audio')
+       audio.currentTime = range
+   }
 
     render(){
         
@@ -228,7 +254,7 @@ class MusicPlay extends Component{
                     {user}
                     {pic}
                    <div className="timelong">
-                    <span >{this.format(this.state.musicnow)}</span><input type="range" value={this.state.musicnow} min="0" max={this.state.musiclong} /><span className="timeright">{this.format(this.state.musiclong)}</span>
+                    <span >{this.format(this.state.musicnow)}</span><input type="range" value={this.state.musicnow} min="0" max={this.state.musiclong}  step="1"  onInput={this.oninput} /><span className="timeright">{this.format(this.state.musiclong)}</span>
                    </div>
                 </div>
                 <div className="playfoot">

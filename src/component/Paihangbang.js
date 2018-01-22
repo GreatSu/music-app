@@ -24,6 +24,10 @@ class Paihangbang extends Component{
 
     }
 
+    alert(){
+        alert('版权还在拼命争取中')
+    }
+
     render(){
         
         const all = this.state.jsons?this.state.jsons.map((item,i)=>{
@@ -36,7 +40,7 @@ class Paihangbang extends Component{
                         <h3>{item.name}</h3>
                         {item.info.map((items,i)=>
                             <div className="insidename" key={i}>
-                            <span>{i+1}&#x3000;{items.title}</span>
+                            <span onClick={this.alert}>{i+1}&#x3000;{items.title}</span>
                             <span > - {items.singer}</span>
                             </div>
                         )}
