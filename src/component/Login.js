@@ -61,6 +61,9 @@ class Login extends Component{
             inputuser.value=""
             inputpass.value=""
             repass.value=""
+            this.setState({
+                isshow:false
+            })
         }else{
             alert('两次输入密码不一致')
             inputpass.value=""

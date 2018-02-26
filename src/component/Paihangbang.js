@@ -24,9 +24,7 @@ class Paihangbang extends Component{
 
     }
 
-    alert(){
-        alert('版权还在拼命争取中')
-    }
+    
 
     render(){
         
@@ -40,7 +38,7 @@ class Paihangbang extends Component{
                         <h3>{item.name}</h3>
                         {item.info.map((items,i)=>
                             <div className="insidename" key={i}>
-                            <span onClick={this.alert}>{i+1}&#x3000;{items.title}</span>
+                            <Link to="/music/id"><span>{i+1}&#x3000;{items.title}</span></Link>
                             <span > - {items.singer}</span>
                             </div>
                         )}

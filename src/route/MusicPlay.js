@@ -22,7 +22,7 @@ import zhuanzhuan from '../img/zhuanzhuan.jpg'
 import innierzai from '../img/yinnierzai.jpg'
 import yanshantu from '../img/yanshantu.jpg'
 
-let piclist ={
+const piclist ={
     "channels":[
         {
             pic : zhuanji,
@@ -51,7 +51,7 @@ let piclist ={
 
 
 
-let musicstr = [citystory,warmheart,rain]
+const musicstr = [citystory,warmheart,rain]
 let i = 0
 
 
@@ -75,8 +75,6 @@ class MusicPlay extends Component{
     }
 
     componentWillMount() {
-    
-        
 
         axios.get('http://api.jirengu.com/fm/getSong.php',{"channel":"public_tuijian_spring"}).then(res =>{
             const data = res.data.song
@@ -90,8 +88,8 @@ class MusicPlay extends Component{
 
   handlepause(e){
     
-    let stopimg = document.querySelector('.stopimg')
-    let musicplayer = document.querySelector('.musicplayer')
+    const stopimg = document.querySelector('.stopimg')
+    const musicplayer = document.querySelector('.musicplayer')
     console.log(musicplayer.duration)
     console.log(musicplayer.currentTime)
     if(e.target.src === pause){
@@ -121,7 +119,7 @@ class MusicPlay extends Component{
 
   componentDidMount(){
     setTimeout(()=>{
-        let musicplayer = document.querySelector('.musicplayer')
+        const musicplayer = document.querySelector('.musicplayer')
         
         this.setState({
             musicnow:musicplayer.currentTime,
@@ -133,12 +131,12 @@ class MusicPlay extends Component{
             })
         },0)
 
-    },2000)
+    },2500)
     
   }
 
   handleprev(){
-    let musicplayer = document.querySelector('.musicplayer')
+    const musicplayer = document.querySelector('.musicplayer')
     
     if(i>0){
         i--
@@ -147,9 +145,9 @@ class MusicPlay extends Component{
     }
     musicplayer.src = musicstr[i]
     let num = Math.floor(Math.random()*4)
-    let musictitle = document.querySelector('.musictitle')
-    let musicart = document.querySelector('.musicart')
-    let stopimg = document.querySelector('.stopimg')
+    const musictitle = document.querySelector('.musictitle')
+    const musicart = document.querySelector('.musicart')
+    const stopimg = document.querySelector('.stopimg')
     musictitle.innerHTML = piclist.channels[num].title
     musicart.innerHTML = piclist.channels[num].art
     stopimg.src = piclist.channels[num].pic
@@ -163,7 +161,7 @@ class MusicPlay extends Component{
   }
 
   handlenext(){
-    let musicplayer = document.querySelector('.musicplayer')
+    const musicplayer = document.querySelector('.musicplayer')
     if(i<musicstr.length -1){
         i++
     }else{
@@ -171,9 +169,9 @@ class MusicPlay extends Component{
     }
     musicplayer.src = musicstr[i]
     let num = Math.floor(Math.random()*4)
-    let musictitle = document.querySelector('.musictitle')
-    let musicart = document.querySelector('.musicart')
-    let stopimg = document.querySelector('.stopimg')
+    const musictitle = document.querySelector('.musictitle')
+    const musicart = document.querySelector('.musicart')
+    const stopimg = document.querySelector('.stopimg')
     musictitle.innerHTML = piclist.channels[num].title
     musicart.innerHTML = piclist.channels[num].art
     stopimg.src = piclist.channels[num].pic
@@ -190,7 +188,7 @@ class MusicPlay extends Component{
 
   colorshow(e){
     
-    let musiccolor = document.querySelector('.colorcontainer')
+    const musiccolor = document.querySelector('.colorcontainer')
     if(musiccolor.style.height >0+'px'){
         musiccolor.style.height = "0"
         
@@ -200,7 +198,7 @@ class MusicPlay extends Component{
   }
 
    clickcolor(e){
-    let musicplay = document.querySelector("#musicplay")
+    const musicplay = document.querySelector("#musicplay")
     musicplay.style.background = e.target.style.background
    }
 
@@ -208,7 +206,7 @@ class MusicPlay extends Component{
    oninput(){
        let range = document.querySelector('input').value
     //    console.log(range)
-       let audio = document.querySelector('audio')
+       const audio = document.querySelector('audio')
        audio.currentTime = range
    }
 
@@ -241,7 +239,7 @@ class MusicPlay extends Component{
         //   const timeleft = this.state.song?<span>{this.format(musicplayer.currentTime)}</span>:null
 
         //   const timeright = this.state.song?()=>{
-        //     let musicplayer = document.querySelector('.musicplayer')
+        //     const musicplayer = document.querySelector('.musicplayer')
         //     return <span>{this.format(musicplayer.duration)}</span>
         // }:null
 
@@ -257,6 +255,15 @@ class MusicPlay extends Component{
                     <span >{this.format(this.state.musicnow)}</span><input type="range" value={this.state.musicnow} min="0" max={this.state.musiclong}  step="1"  onInput={this.oninput} /><span className="timeright">{this.format(this.state.musiclong)}</span>
                    </div>
                 </div>
+                <div className="jiathis_style_32x32 playmidtwo">
+                    {/* <Link to="" className="jiathis_button_qzone"></Link>
+                    <Link to="" className="jiathis_button_tsina"></Link>
+                    <Link to="" className="jiathis_button_tqq"></Link>
+                    <Link to="" className="jiathis_button_weixin"></Link>
+                    <Link to="" className="jiathis_button_renren"></Link> */}
+                    <Link to="http://www.jiathis.com/share" className="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></Link>
+                    {/* <Link to="" className="jiathis_counter_style"></Link> */}
+                </div>
                 <div className="playfoot">
                     {audio}
                     <div className="controls">
@@ -269,3 +276,5 @@ class MusicPlay extends Component{
     }
 }
 export default MusicPlay
+
+{/* <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script> */}
