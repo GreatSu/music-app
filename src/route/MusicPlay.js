@@ -22,6 +22,9 @@ import zhuanzhuan from '../img/zhuanzhuan.jpg'
 import innierzai from '../img/yinnierzai.jpg'
 import yanshantu from '../img/yanshantu.jpg'
 
+import love from '../img/lovered.png'
+import dislove from '../img/dislike.png'
+
 const piclist ={
     "channels":[
         {
@@ -65,6 +68,7 @@ class MusicPlay extends Component{
             song:'',
             musiclong:"",
             musicnow:"",
+            islove:false,
         }
         this.handlepause = this.handlepause.bind(this)
         this.colorshow = this.colorshow.bind(this)
@@ -72,6 +76,7 @@ class MusicPlay extends Component{
         this.handleprev =this.handleprev.bind(this)
         this.handlenext = this.handlenext.bind(this)
         this.format = this.format.bind(this)
+        this.islovehandle = this.islovehandle.bind(this)
     }
 
     componentWillMount() {
@@ -185,6 +190,11 @@ class MusicPlay extends Component{
 
   }
 
+  islovehandle(){
+      this.setState({
+          islove : !this.state.islove
+      })
+  }
 
   colorshow(e){
     
@@ -256,13 +266,8 @@ class MusicPlay extends Component{
                    </div>
                 </div>
                 <div className="jiathis_style_32x32 playmidtwo">
-                    {/* <Link to="" className="jiathis_button_qzone"></Link>
-                    <Link to="" className="jiathis_button_tsina"></Link>
-                    <Link to="" className="jiathis_button_tqq"></Link>
-                    <Link to="" className="jiathis_button_weixin"></Link>
-                    <Link to="" className="jiathis_button_renren"></Link> */}
                     <Link to="http://www.jiathis.com/share" className="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></Link>
-                    {/* <Link to="" className="jiathis_counter_style"></Link> */}
+                    <img onClick={this.islovehandle} className='dislike' src={this.state.islove == true?love:dislove}/>
                 </div>
                 <div className="playfoot">
                     {audio}

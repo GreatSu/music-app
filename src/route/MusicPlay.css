@@ -69,3 +69,7 @@ input[type=range]{
     background-color:black;
     border-color:black;
 }
+.dislike{
+    width: 36px;
+    height: 36px;
+}
